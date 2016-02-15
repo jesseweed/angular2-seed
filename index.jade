@@ -1,0 +1,30 @@
+html
+  head
+    title Angular 2 QuickStart
+    meta(name='viewport', content='width=device-width, initial-scale=1')    
+    // LIB FILES
+    script(src='lib/es6-shim/es6-shim.min.js')
+    script(src='lib/systemjs/dist/system-polyfills.js')
+    script(src='lib/angular2/bundles/angular2-polyfills.js')
+    script(src='lib/systemjs/dist/system.src.js')
+    script(src='lib/rxjs/bundles/Rx.js')
+    script(src='lib/angular2/bundles/angular2.dev.js')    
+    script(src='lib/material-design-lite/material.min.js')
+    //- STYLES
+    link(rel='stylesheet', href='lib/material-design-lite/material.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet', href='css/styles.css')
+    //- SYSTEM
+    script.
+      System.config({
+        packages: {
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/main').then(null, console.error.bind(console));
+
+  body
+    my-app Loading...

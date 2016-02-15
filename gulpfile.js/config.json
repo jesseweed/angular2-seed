@@ -1,0 +1,33 @@
+{
+	"src": {
+		"assets": {
+			"html": {
+				"templates": ["./**/*.jade", "!./node_modules/**", "!./bower_components/**", "dist"],
+				"index": "./index.jade"
+			},
+			"stylus": {
+				"app": ["!./public/css/**", "./app/public/*.styl", "./app/**/*.styl"],
+				"main": "./public/css/styles.styl"
+			}
+		},
+		"app": "./app/**/*",
+		"ts": "./app/**/*.ts"
+	},
+	"dest": {
+		"app": "./dist/app",
+		"assets": {
+			"css": "./dist/public/css",
+			"dir": "./dist/public",
+			"html": {
+				"index": "./dist/",
+				"templates": "./dist/"
+			},
+			"stylus": {
+				"app": "./dist/",
+				"main": "./dist/css/"
+			}
+		},
+		"lib": "./dist/lib"
+	},
+	"npm": "./node_modules/"
+}

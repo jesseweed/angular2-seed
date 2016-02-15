@@ -11,8 +11,8 @@
 				"index": "./index.jade"
 			},
 			"stylus": {
-				"app": ["!./public/css/**", "./app/public/*.styl", "./app/**/*.styl"],
-				"main": "./public/css/styles.styl"
+				"app": ["!./app/css/**", "./app/public/*.styl", "./app/**/*.styl"],
+				"main": "./app/css/styles.styl"
 			}
 		},
 		"app": "./app/**/*",
@@ -21,7 +21,7 @@
 	"dest": {
 		"app": "./_dist/app",
 		"assets": {
-			"css": "./_dist/public/css",
+			"css": "./_dist/app/css",
 			"dir": "./_dist/public",
 			"html": {
 				"index": "./_dist/",

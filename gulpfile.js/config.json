@@ -1,8 +1,13 @@
 {
+	"browserSync": {
+		"baseDir": "_dist",
+		"open": false,
+		"port": 1981
+	},
 	"src": {
 		"assets": {
 			"html": {
-				"templates": ["./**/*.jade", "!./node_modules/**", "!./bower_components/**", "dist"],
+				"templates": ["./**/*.jade", "!./node_modules/**", "!./bower_components/**", "!dist"],
 				"index": "./index.jade"
 			},
 			"stylus": {
@@ -14,20 +19,31 @@
 		"ts": "./app/**/*.ts"
 	},
 	"dest": {
-		"app": "./dist/app",
+		"app": "./_dist/app",
 		"assets": {
-			"css": "./dist/public/css",
-			"dir": "./dist/public",
+			"css": "./_dist/public/css",
+			"dir": "./_dist/public",
 			"html": {
-				"index": "./dist/",
-				"templates": "./dist/"
+				"index": "./_dist/",
+				"templates": "./_dist/"
 			},
 			"stylus": {
-				"app": "./dist/",
-				"main": "./dist/css/"
+				"app": "./_dist/",
+				"main": "./_dist/css/"
 			}
 		},
-		"lib": "./dist/lib"
+		"dir": "./dist",
+		"lib": "./_dist/lib"
 	},
-	"npm": "./node_modules/"
+	"npm": "./node_modules/",
+	"watch": {
+		"dir": [
+	    "app/**/*",
+	    "public/**/*",
+	    "index.jade"
+		],
+		"func": [
+			"rebuild"
+		]
+	}
 }

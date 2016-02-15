@@ -1,15 +1,12 @@
-gulp = require('gulp')
 browserSync = require('browser-sync')
+config      = require('../config.json')
+gulp = require('gulp')
 
 # BROWSER SYNC
 gulp.task 'serve', [ 'build' ], ->
   browserSync
-    server: baseDir: 'dist'
-    open: false
-    port: 1981
+    server: baseDir: config.browserSync.baseDir
+    open: config.browserSync.open
+    port: config.browserSync.port
 
-  gulp.watch [
-    'app/**/*'
-    'public/**/*'
-    'index.jade'
-  ], [ 'rebuild' ]
+  gulp.watch config.watch.dir, config.watch.func

@@ -3,10 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "postinstall": "npm run typings install",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "lite": "lite-server",
-    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
+    "start": "gulp serve",
     "typings": "typings"
   },
   "license": "MIT",

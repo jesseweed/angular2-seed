@@ -38,7 +38,7 @@ gulp.task 'compileAndWatch', ->
   ]
 
 # SET DEFAULT TAK TO BUILD FOR NOW
-gulp.task 'default', [ 'build' ]
+gulp.task 'default', [ 'serve' ]
 
 # REBUILD & RELEOAD SERVER IF SOMETHING CHANGES
 gulp.task 'rebuild', ->

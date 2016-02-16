@@ -84,7 +84,7 @@ app
     my-component.ts
 ```
 
-and will give you
+which compiles to:
 
 ```
 _build

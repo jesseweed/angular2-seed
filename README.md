@@ -60,7 +60,7 @@ div
 
 and voila! You've just replaced inline templates with Jade templates.
 
-**note:** the `hero.jade` file will will be compiled to `hero.html`, this why you link to the .html file and not the .jade file.
+**note:** the `hero.jade` file will will be compiled to `hero.html`, which is why you link to the .html file and not the .jade file.
 
 
 *****

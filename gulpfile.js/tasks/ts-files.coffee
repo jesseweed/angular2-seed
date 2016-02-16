@@ -1,7 +1,7 @@
 gulp      = require('gulp')
 tsconfig  = require('tsconfig-glob')
 
-# ADD TS FILES TO TSCONFIG FILE ARRAY
+# ADD TYPESCRIPT FILES TO THE FILE ARRAY IN TSCONFIG
 gulp.task 'ts-files', ->
   tsconfig
     configPath: '.'

@@ -2,6 +2,7 @@ config = require('../config.json')
 gulp = require('gulp')
 
 # COPY REQUIRED NPM PACKAGES TO LIB FOLDER
+# TODO: THIS SUCKS! FIND A BETTER SOLUTION :(
 gulp.task 'copy:libs', ->
   gulp
     .src([

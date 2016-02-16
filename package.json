@@ -38,8 +38,10 @@
     "gulp-typescript": "^2.11.0",
     "lite-server": "^2.0.1",
     "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5",
     "tsconfig-glob": "^0.4.1",
     "typescript": "^1.7.5",
-    "typings": "^0.6.8"
+    "typings": "^0.6.8",
+    "yargs": "^4.1.0"
   }
 }

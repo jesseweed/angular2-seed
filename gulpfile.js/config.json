@@ -35,15 +35,5 @@
 		"dir": "./dist",
 		"lib": "./_dist/lib"
 	},
-	"npm": "./node_modules/",
-	"watch": {
-		"dir": [
-	    "app/**/*",
-	    "public/**/*",
-	    "index.jade"
-		],
-		"func": [
-			"rebuild"
-		]
-	}
+	"npm": "./node_modules/"
 }

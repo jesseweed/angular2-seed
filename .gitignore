@@ -3,6 +3,6 @@
 *.log
 *.sublime-project
 *.sublime-workspace
-_dist/
+_build/
 node_modules/
 bower_components/

@@ -1,6 +1,6 @@
 {
 	"browserSync": {
-		"baseDir": "_dist",
+		"baseDir": "_build",
 		"open": false,
 		"port": 1981
 	},
@@ -19,21 +19,21 @@
 		"ts": "./app/**/*.ts"
 	},
 	"dest": {
-		"app": "./_dist/app",
+		"app": "./_build/app",
 		"assets": {
-			"css": "./_dist/app/css",
-			"dir": "./_dist/public",
+			"css": "./_build/app/css",
+			"dir": "./_build/public",
 			"html": {
-				"index": "./_dist/",
-				"templates": "./_dist/"
+				"index": "./_build/",
+				"templates": "./_build/"
 			},
 			"stylus": {
-				"app": "./_dist/",
-				"main": "./_dist/css/"
+				"app": "./_build/",
+				"main": "./_build/css/"
 			}
 		},
 		"dir": "./dist",
-		"lib": "./_dist/lib"
+		"lib": "./_build/lib"
 	},
 	"npm": "./node_modules/"
 }

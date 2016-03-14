@@ -1,5 +1,5 @@
 # Angular 2 Seed
-Bootstrap Angular 2 apps with Jade + Stylus.
+Bootstrap Angular 2 apps with Gulp, Jade + Stylus.
 
 _[WIP]_
 

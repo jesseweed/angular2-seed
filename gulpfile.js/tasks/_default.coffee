@@ -1,5 +1,5 @@
-gulp        = require('gulp')
 browserSync = require('browser-sync')
+gulp        = require('gulp')
 reload      = browserSync.reload
 runSequence = require('run-sequence')
 

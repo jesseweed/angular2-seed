@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "../dist/app",
+    "outDir": "_build/app",
     "target": "es5",
     "module": "system",
     "moduleResolution": "node",
@@ -8,8 +8,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": false,
-    "suppressImplicitAnyIndexErrors": true
+    "noImplicitAny": false
   },
   "filesGlob": [
     "app/**/*.ts",
@@ -27,9 +26,9 @@
     "rewriteTsconfig": true
   },
   "files": [
+    "typings/tsd.d.ts",
     "typings/browser.d.ts",
-    "typings/browser/ambient/es6-shim/es6-shim.d.ts",
-    "typings/browser/ambient/jasmine/jasmine.d.ts",
+    "typings/browser/ambient/es6-shim/index.d.ts",
     "app/app.component.ts",
     "app/main.ts"
   ]

@@ -1,6 +1,6 @@
 {
   "name": "angular2-seed",
-  "version": "0.0.1",
+  "version": "0.2.1",
   "scripts": {
     "postinstall": "npm run typings install",
     "start": "gulp serve",

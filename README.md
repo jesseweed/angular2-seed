@@ -14,11 +14,11 @@ $ gulp serve
 
 **launch browser: ** [http://localhost:1981](http://localhost:1981)
 
-_Or_ if you don't want to run the server & simply want to your source files to the build directory:
+_Or_ if you don't want to run a server & simply want to output your source files to the build directory:
 
 #### Compile all our source files & output to `build` directory
 ```
-$ gulp serve
+$ gulp build
 ```
 
 *****
@@ -42,7 +42,7 @@ with something like this:
 ```
 @Component({
   selector: 'my-app',
-  templateUrl: 'app/hero.html'
+  templateUrl: 'app/hero.jade'
 })
 ```
 
@@ -94,3 +94,22 @@ _build
       my-component.html
       my-component.js
 ```
+
+*****
+
+## Settings
+
+By default this is setup to use Jade & Stylus. However, if you prefer you can easily set it to use flat HTML and/or Sass:
+
+**To use Sass:**
+1) Open gulpfile.js/tasks/_default.coffee and change all instances of `compile:stylus` to `compile:sass`
+
+**To use HTML:**
+1) Open gulpfile.js/tasks/_default.coffee and change all instances of `compile:jade` to `compile:html`
+
+
+*****
+
+## Errors:
+
+If you receive errors, try deleting your "typings" folder and running `npm run typings install`

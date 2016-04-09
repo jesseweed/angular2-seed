@@ -1,5 +1,6 @@
 config  = require('../../config.json')
 gulp    = require('gulp')
+runSequence = require('run-sequence')
 
 # COMPILE HTML TEMPLATES
 gulp.task 'compile:html', ->

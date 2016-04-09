@@ -1,5 +1,6 @@
 config  = require('../../config.json')
 gulp    = require('gulp')
+runSequence = require('run-sequence')
 sourcemaps  = require('gulp-sourcemaps')
 stylus  = require('gulp-stylus')
 

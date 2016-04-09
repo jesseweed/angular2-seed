@@ -1,6 +1,7 @@
 config  = require('../../config.json')
 gulp    = require('gulp')
 jade    = require('gulp-jade')
+runSequence = require('run-sequence')
 
 # COMPILE JADE TEMPLATES
 gulp.task 'compile:jade', ->
